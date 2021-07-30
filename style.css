@@ -1,0 +1,327 @@
+body {
+	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
+	background: #4169E1;
+}
+
+p, h1, h2, h3, h4, h5{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+* {box-sizing: border-box;}
+
+header{
+	height: 40vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.perfil{
+	width: 100%;
+	margin: 0 auto 3.5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+	
+#foto-perfil{
+	width: 8em;
+	border-radius: 50%;
+}
+	
+.perfil h2{
+	margin: 3vh 0 1vh;
+	text-align: center;
+	font-size: 1.5em;
+}
+	
+.perfil p{
+	max-width: 85%;
+	text-align: center;
+}
+
+main{
+	width: 100vw;
+	height: 55vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#content{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	border-radius: 45px 45px 0 0;
+	background: white;
+}
+
+#menu{
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	position: absolute;
+	top: -25px;
+}
+
+.menu-button{
+	width: 27%;
+	height: 8vh;
+}
+
+#button-1{
+	width: 100%;
+	height: 100%;
+	outline: 0;
+	border: 0;
+	border-bottom: 3px solid black;
+	border-radius: 10px;
+	background: #D2dce1;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-family: Montserrat;
+}
+
+#button-2{
+	width: 100%;
+	height: 100%;
+	outline: 0;
+	border: 0;
+	border-radius: 10px;
+	background: white;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-family: Montserrat;
+}
+
+#button-3{
+	width: 100%;
+	height: 100%;
+	outline: 0;
+	border: 0;
+	border-radius: 10px;
+	background: white;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-family: Montserrat;
+}
+
+#menu button:active{
+	background: white;
+	opacity: 1;
+}
+
+#conteudo{
+	width: 80%;
+	margin: 8vh auto 0;
+	height: 85%;
+}
+
+#conteudo1{
+	width: 100%;
+	height: 100%;
+}
+
+.titulo-conteudo{
+	height: 5.5vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.titulo-conteudo p{
+	font-size: 0.8em;
+}
+
+#conteudo-principal{
+	width: 100%;
+	height: 88%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.rede-social{
+	cursor: pointer;
+	padding: 1.7vh 0;
+}
+
+.rede-social a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.rede-social i{
+	font-size: 120%;
+}
+
+.rede-social p{
+	margin: 0 0 0 3%;
+}
+
+hr{
+	border-color: black;
+	width: 100%;
+}
+
+#conteudo2{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+#conteudo-secundario{
+	width: 100%;
+	height: 88%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#breve{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	text-transform: uppercase;
+}
+
+#conteudo3{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+#conteudo-terceario{
+	width: 100%;
+    height: 88%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitulo-conteudo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 9%;
+	font-size: 1.15rem;
+}
+
+.habilidade{
+	display: flex;
+	padding: 1.7vh 0;
+	justify-content: center;
+}
+
+.habilidade p:nth-of-type(1){
+	margin-right: 2%;
+}
+
+.habilidade p:nth-of-type(2){
+	margin-left: 5%;
+}
+
+.tecnologia{
+	width: 32.5%;
+	text-align: end;
+}
+
+.estrelas{
+	width: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.porcentagem{
+	width: 32.5%;
+}
+
+footer{
+	width: 100%;
+	height: 5vh;
+	background: #4169E1;
+	justify-content: center;
+	font-size: 0.9em;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+@media only screen and (max-width: 430px){
+	header{
+		height: 50vh;
+		align-items: flex-start;
+	}
+	
+	.perfil{
+		margin: 4.5vh auto 0;
+	}
+	
+	main{
+		height: 45vh;
+	}
+	
+	#conteudo{
+		margin-top: 6.8vh;
+		width: 90%;
+	}
+	
+	footer{
+		height: 5vh;
+	}
+	
+	#menu{
+		flex-wrap: wrap;
+		top: -80px;
+	}
+	
+	.menu-button{
+		width: 40%;
+	}
+	
+	.menu-button:nth-of-type(3){
+		margin-top: 1vh;
+	}
+}
+
+@media only screen and (min-width: 1023px){
+	header{
+		width: 60vw;
+		margin: 0 auto;
+	}
+	
+	main{
+		width: 60vw;
+		margin: 0 auto;
+	}
+	
+	#content{
+		border-radius: 45px 45px 45px 45px;
+	}
+	
+	footer{
+		width: 60vw;
+		margin: 0 auto;
+	}
+}
